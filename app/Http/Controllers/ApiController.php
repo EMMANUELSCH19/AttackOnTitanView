@@ -6,11 +6,6 @@ use Illuminate\Http\Request;
 
 class ApiController extends Controller
 {
-    public function index()
-    {
-        return view('index');
-    }
-
     public function getAttackOnTitan(){
         $cliente = new \GuzzleHttp\Client();
         $response = $cliente->request('GET', 'https://attackontitanapi.herokuapp.com/api/characters/');

@@ -18,6 +18,6 @@ use App\Http\Controllers\ApiController;
 //     return view('index');
 // });
 
-Route::get('/inicio',[ApiController::class,'index'])->name('index');
+// Route::get('/inicio',[ApiController::class,'index'])->name('index');
 
-Route::get('/getAttackOnTitan',[ApiController::class,'getAttackOnTitan'])->name('getAttackOnTitan');    
+Route::get('/',[ApiController::class,'getAttackOnTitan'])->name('getAttackOnTitan');    
